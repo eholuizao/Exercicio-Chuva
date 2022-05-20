@@ -63,8 +63,10 @@ body {
     border-left: 5px solid var(--laranja);
 }
 
-header {
+header { 
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: var(--laranjaClarin);
 
@@ -72,7 +74,6 @@ header {
 }
 
 header .header-text {
-    width: 60%;
     color: var(--cinza);
 }
 
@@ -82,7 +83,6 @@ header .header-text > h1 {
 }
 
 header .language-dropbox {
-    width: 30%;
 
     display: flex;
     align-items: center;
@@ -107,8 +107,6 @@ header .language-dropbox > .dropbox-content > p {
 
 
 header .logged-user{
-    width: 20%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,11 +122,70 @@ header .logged-user > img {
 
 main {
     width: 90%;
+
     margin: auto;
+    margin-top: 20px;
+}
+
+main h1 {
+    color: var(--laranja);
+
+    margin-bottom: 40px;
+}
+
+main h2 {
+    color: #4E4E4E;
+
+    padding: 15px;
+
+    background-color: var(--laranjaClarin);
+    border: 1px solid #ECECEC;
+}
+
+article {
+    margin-top: 40px;
+    border: 1px solid #ECECEC;
+}
+
+.summary-article p{
+    font-family: var(--fontQuicksand);
+    padding: 10px;
+}
+
+.discussion-article p{
+    font-family: var(--fontQuicksand);
+
+}
+
+.discussion-article > .centered-text {
+    width: 95%;
+
+    margin: auto;
+    padding: 20px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ECECEC;
+}
+
+.discussion-article > .centered-text > img {
+    padding: 20px;
+}
+
+.discussion-article h3 {
+    color: var(--laranja);
+}
+
+.aside-links p {
+    color: var(--laranja);
+}
+
+section .side-div {
+    display: flex;
 }
 
 footer {
-    width: 90%;
+    width: 95%;
     margin: auto;
 
     display: flex;
