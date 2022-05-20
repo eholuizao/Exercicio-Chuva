@@ -9,7 +9,131 @@
     --fontRoboto: 'Roboto', Arial, Verdana, sans-serif;
     --fontQuicksand: 'Quicksand', Arial, Verdana, sans-serif;
 
+    --laranjaAmarelado: #FFB354;
     --laranja: #ED7839;
     --laranjaClarin: #FDF1EB;
+    --cinza: #725C5C;
+}
 
+body {
+    font-family: var(--fontRoboto);
+
+    position: relative;
+    
+    display: flex;
+}
+
+#side-menu {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+}
+
+.side-menu-content {
+    position: sticky;
+    top: 0;
+}
+
+#side-menu h1 {
+    color: white;
+    text-align: center;
+
+    background: linear-gradient(to bottom, #FFB354, #ED7839);
+
+
+    padding: 20px 10px;
+}
+
+#side-menu nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#side-menu nav a {
+    color: var(--cinza);
+    font: normal bold 1em var(--fontQuicksand);
+    text-decoration: none;
+
+    padding: 10px 25px;
+
+    border-bottom: 1px solid rgb(167, 167, 167);
+    border-left: 5px solid white;
+}
+
+#side-menu nav a#choosen {
+    background-color: var(--laranjaClarin);
+    border-left: 5px solid var(--laranja);
+}
+
+header {
+    display: flex;
+
+    background-color: var(--laranjaClarin);
+
+    padding: 5px 0px 0px 40px;
+}
+
+header .header-text {
+    width: 60%;
+    color: var(--cinza);
+}
+
+header .header-text > h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+header .language-dropbox {
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .language-dropbox > .dropbox-content {
+    border: 1px solid rgba(128, 128, 128, 0.356);
+
+    padding: 5px 10px;
+
+    margin: 0px 50px;
+}
+
+header .language-dropbox > .dropbox-content > p {
+    font-size: 1em;
+    font-family: var(--fontQuicksand);
+    font-weight: 500;
+
+    display: inline;
+}
+
+
+header .logged-user{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: right;
+    font-family: var(--fontQuicksand);
+}
+
+header .logged-user > img {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+
+    border-top: 1px solid #dbdada;
+
+    padding-top: 10px;
 }

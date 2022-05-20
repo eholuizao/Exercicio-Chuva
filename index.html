@@ -5,122 +5,137 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exercício Front-End</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <div class="header-text">
-                Anais do Simpósio Latino Americano de Ciências de Alimentos
-                Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
-                ISSN: 1234-5678
-            </div>
-
-            <div class="language-dropbox">
-                
-            </div>
-
-            <div class="logged-user">
-                <p>Bem vindo</p>
-                <p>alguem12@galoascience.com</p>
-                <img src="images/user-icon.png" alt="Foto de perfil">
-            </div>
-        </header>
-
         <div id="side-menu">
-            <h1>Slaca 2019</h1>
-            <img src="images/logo.png" alt="">
-            <nav>
-                <a href="#">Apresentação</a>
-                <a href="#">Comitês</a>
-                <a href="#">Autores</a>
-                <a href="#">Eixos temáticos</a>
-                <a href="#">Trabalhos</a>
-                <a href="#">Contato</a>
-            </nav>
+            <div class="side-menu-content">
+                <h1>SLACA 2019</h1>
+                <img src="images/logo.png" alt="">
+                <nav>
+                    <a href="#">Apresentação</a>
+                    <a href="#">Comitês</a>
+                    <a href="#">Autores</a>
+                    <a href="#">Eixos temáticos</a>
+                    <a href="#" id="choosen">Trabalhos</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
         </div>
 
-        <main>
-            <section>
-                <h1>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h1>
-
-                <div class="section-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AjtGy0IhPUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="main-content">
+            <header>
+                <div class="header-text">
+                    <p>Anais do Simpósio Latino Americano de Ciências de Alimentos  </p>
+                    <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1>
+                    <p>ISSN: 1234-5678</p>
                 </div>
+    
+                <div class="language-dropbox">
+                    <div class="dropbox-content">
+                        <img src="images/language-image.png">
+                        <p>PT, BR</p>
+                        <img src="images/dropdown.png">
+                    </div>
+                </div>
+    
+                <div class="logged-user">
+                    <div class="logged-email">
+                        <p>Bem vindo</p>
+                        <p>alguem12@galoascience.com</p>
+                    </div>
+                    <img src="images/user-icon.png" alt="Foto de perfil">
+                </div>
+            </header>
+    
+            <main>
+                <section>
+                    <h1>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h1>
+    
+                    <div class="section-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AjtGy0IhPUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+    
+                    <aside>
+                        <h2>Detalhes</h2>
+                        <p>Tipo de Apresentação: Pôster</p> 
+                        <p>Eixo temático: Alimentação e saúde (AS)</p> 
+                        <p>Palavras-chaves: Alimentos funcionais, alimentação escolar.</p>
+    
+                        <h3>Autores</h3>
+                        <ul>
+                            <li>Galileo Galilei¹</li> 
+                            <li>Berta Lange de Morretes² </li>
+                            <li>Isaac Newton³</li> 
+                            <li>Cesar Lattes¹</li> 
+                            <li>Stephen Hawking⁴</li>
+                        </ul>  
+    
+                        ¹Universidade Estadual de Campinas
+                        ²Universidade de São Paulo
+                        ³Instituto Nacional de Pesquisas Espaciais
+                        ⁴Universidade Federal do Rio de Janeiro
+                    </aside>
+    
+                    <article class="summary-article">
+                        <h2>Resumo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant...Ver mais</p>
+                    </article>
+    
+                    <article class="discussion-article">
+                        <h2>Discussões</h2>
+                        <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+                        <img src="images/icon-hand.png">
+                        <img src="images/icon-qa.png">
+                        <img src="images/icon-idea.png">
+                        <p>
+                            Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+                        </p>
+                        <!--Botão de criar tópico-->
+    
+                        <div class="discussion-topic">
+                            <h3>Assunto da pergunta aparece aqui</h3>
+                            <p>Carlos Henrique Santos</p>
+                            <p>
+                                Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                            </p>
+                            <div class="topic-footer">
+                                <img src="images/more-icon.png" alt="Mais informações">
+                                <img src="images/like-icon.png" alt="Favoritar">
+                                <p>1 Like</p>
+                                <p>1 Resposta</p>
+                            </div>
+                        </div>
+    
+                        <div class="discussion-topic">
+                            <h3>Assunto da pergunta aparece aqui</h3>
+                            <p>Carlos Henrique Santos</p>
+                            <p>
+                                Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                            </p>
+                            <div class="topic-footer">
+                                <img src="images/more-icon.png" alt="Mais informações">
+                                <img src="images/like-icon.png" alt="Favoritar">
+                                <p>1 Like</p>
+                                <p>1 Resposta</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
 
-                <aside>
-                    <h2>Detalhes</h2>
-                    <p>Tipo de Apresentação: Pôster</p> 
-                    <p>Eixo temático: Alimentação e saúde (AS)</p> 
-                    <p>Palavras-chaves: Alimentos funcionais, alimentação escolar.</p>
-
-                    <h3>Autores</h3>
-                    <ul>
-                        <li>Galileo Galilei¹</li> 
-                        <li>Berta Lange de Morretes² </li>
-                        <li>Isaac Newton³</li> 
-                        <li>Cesar Lattes¹</li> 
-                        <li>Stephen Hawking⁴</li>
-                    </ul>  
-
-                    ¹Universidade Estadual de Campinas
-                    ²Universidade de São Paulo
-                    ³Instituto Nacional de Pesquisas Espaciais
-                    ⁴Universidade Federal do Rio de Janeiro
-                </aside>
-
-                <article>
-                    <h2>Resumo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant...Ver mais</p>
-                </article>
-
-                <article>
-                    <h2>Discussões</h2>
-                    <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
-                    <img src="images/icon-hand.png">
-                    <img src="images/icon-qa.png">
-                    <img src="images/icon-idea.png">
+            <footer>
+                <img src="images/footer-image.png">
+                <div>
                     <p>
-                        Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+                        Preservar a memória do evento e ampliar o acesso ao conhecimento científico gerado em eventos é a razão de ser da plataforma Galoá Proceedings
                     </p>
-                    <!--Botão de criar tópico-->
-
-                    <div class="discussion-topic">
-                        <h3>Assunto da pergunta aparece aqui</h3>
-                        <p>Carlos Henrique Santos</p>
-                        <p>
-                            Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
-                        </p>
-                        <div class="topic-footer">
-                            <img src="images/more-icon.png" alt="Mais informações">
-                            <img src="images/like-icon.png" alt="Favoritar">
-                            <p>1 Like</p>
-                            <p>1 Resposta</p>
-                        </div>
-                    </div>
-
-                    <div class="discussion-topic">
-                        <h3>Assunto da pergunta aparece aqui</h3>
-                        <p>Carlos Henrique Santos</p>
-                        <p>
-                            Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
-                        </p>
-                        <div class="topic-footer">
-                            <img src="images/more-icon.png" alt="Mais informações">
-                            <img src="images/like-icon.png" alt="Favoritar">
-                            <p>1 Like</p>
-                            <p>1 Resposta</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <img src="images/footer-image.png">
-            <p>
-                Preservar a memória do evento e ampliar o acesso ao conhecimento científico gerado em eventos é a razão de ser da plataforma Galoá Proceedings
-            </p>
-            <p>
-                Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científico formentado pelos encontros e aumentando o impacto do evento.
-            </p>
-        </footer>
+                    <br>
+                    <p>
+                        Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científico formentado pelos encontros e aumentando o impacto do evento.
+                    </p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
